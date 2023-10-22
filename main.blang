@@ -1,0 +1,11 @@
+
+	TIPE a = 10
+	TIPE b = 10
+	TIPE c3 = a+b
+	TIPE c2 = a-b
+	TIPE c1 = a*b
+	TIPE c = a/b
+	CETAK(c3)
+	CETAK(c2)
+	CETAK(c1)
+	CETAK(c)	
