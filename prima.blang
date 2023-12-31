@@ -1,0 +1,30 @@
+ARTI is_prima (x)
+  TERULANG i = 2 KE x LALU
+    JIKA x % i == 0 LALU
+      KEMBALI SALAH
+    SELESAI
+  SELESAI
+  KEMBALI BENAR
+SELESAI
+
+ARTI cari_bilangan_prima (awal, akhir)
+  TIPE list_bilangan_prima = []
+  
+  TERULANG x = awal KE akhir LALU
+    JIKA is_prima(x) LALU
+      APPEND(list_bilangan_prima, x)
+    SELESAI
+  SELESAI
+  
+  KEMBALI list_bilangan_prima
+SELESAI
+
+CETAK("ANGKA AWAL: ")
+TIPE A = MASUK_ANGKA()
+
+CETAK("ANGKA AKHIR: ")
+TIPE B = MASUK_ANGKA()
+
+TIPE C = cari_bilangan_prima(A, B)
+
+CETAK(C)

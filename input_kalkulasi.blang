@@ -1,0 +1,50 @@
+KEULANG BENAR LALU
+    CETAK("MASUKAN NILAI A: ")
+    TIPE a = MASUK_ANGKA()
+
+    CETAK("MASUKAN NILAI B: ")
+    TIPE b = MASUK_ANGKA()
+
+    CETAK("PILIH NOMOR")
+    CETAK("PILIH 1 PENJUMLAH")
+    CETAK("PILIH 2 PENGURANG")
+    CETAK("PILIH 3 PENGALI")
+    CETAK("PILIH 4 PEMBAGI")
+    CETAK("PILIH 5 PANGKAT")
+    CETAK("PILIH 0 Keluar")
+    TIPE C = MASUK_ANGKA()
+    
+    JIKA C == 1 LALU
+        TIPE D1 = a + b
+        CETAK("HASIL PENJUMLAHAN:")
+        CETAK(D1)
+        
+    LAINJIKA C == 2 LALU
+        TIPE D2 = a - b
+        CETAK("HASIL PENGURANGAN:")
+        CETAK(D2)
+
+    LAINJIKA C == 3 LALU
+        TIPE D3 = a * b
+        CETAK("HASIL PERKALIAN:")
+        CETAK(D3)
+        
+    LAINJIKA C == 4 LALU
+        TIPE D4 = a / b
+        CETAK("HASIL PEMBAGIAN:")
+        CETAK(D4)
+        
+    LAINJIKA C == 5 LALU
+        TIPE D5 = a ^ b
+        CETAK("HASIL PERPANGKATAN:")
+        CETAK(D5)
+    LAINJIKA C == 0 LALU
+        HENTI
+    LAIN
+        CETAK(" 0 UNTUK KELUAR")
+        
+    SELESAI
+SELESAI
+
+
+

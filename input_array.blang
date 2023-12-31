@@ -1,0 +1,27 @@
+ARTI buat_array()
+    TIPE array = []
+    KEMBALI array    
+SELESAI
+
+TIPE ArrayKu = buat_array()
+
+ARTI isi_array(arr, item)
+    JIKA IS_LIST(item) LALU
+        APPEND(arr, item)
+
+		
+	SELESAI
+
+SELESAI
+
+CETAK("INPUT maximal JUMLAH LIST")
+TIPE MAXIMAL = MASUK_ANGKA()
+KEULANG BENAR LALU
+    TIPE ISI = MASUK()
+    isi_array(ArrayKu, [ISI])
+    
+    JIKA LEN(ArrayKu) == MAXIMAL LALU
+        CETAK(ArrayKu)
+        HENTI
+    SELESAI
+SELESAI
