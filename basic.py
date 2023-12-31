@@ -16,6 +16,7 @@ DIGITS = "0123456789"
 LETTERS = string.ascii_letters
 LETTERS_DIGITS = LETTERS + DIGITS
 
+
 #######################################
 # ERRORS
 #######################################
@@ -1567,7 +1568,8 @@ class Value:
         return RTResult().failure(self.illegal_operation())
 
     def copy(self):
-        raise Exception("No copy method defined")
+        return self
+    
 
     def is_true(self):
         return False
@@ -1872,6 +1874,13 @@ class Function(BaseFunction):
         self.body_node = body_node
         self.arg_names = arg_names
         self.should_auto_return = should_auto_return
+    def copy(self):
+        copy = Function(
+            self.name, self.body_node, self.arg_names, self.should_auto_return
+        )
+        copy.set_context(self.context)
+        copy.set_pos(self.pos_start, self.pos_end)
+        return copy
 
     def execute(self, args):
         res = RTResult()
@@ -1892,14 +1901,10 @@ class Function(BaseFunction):
             or Number.null
         )
         return res.success(ret_value)
+        
+    
+        
 
-    def copy(self):
-        copy = Function(
-            self.name, self.body_node, self.arg_names, self.should_auto_return
-        )
-        copy.set_context(self.context)
-        copy.set_pos(self.pos_start, self.pos_end)
-        return copy
 
     def __repr__(self):
         return f"<function {self.name}>"
@@ -1924,15 +1929,18 @@ class BuiltInFunction(BaseFunction):
         if res.should_return():
             return res
         return res.success(return_value)
+        
 
+
+            
     def no_visit_method(self, node, context):
         raise Exception(f"No execute_{self.name} method defined")
-
     def copy(self):
         copy = BuiltInFunction(self.name)
         copy.set_context(self.context)
         copy.set_pos(self.pos_start, self.pos_end)
         return copy
+
 
     def __repr__(self):
         return f"<built-in function {self.name}>"
@@ -2558,10 +2566,15 @@ global_symbol_table.set("POP", BuiltInFunction.pop)
 global_symbol_table.set("FIND", BuiltInFunction.find)
 global_symbol_table.set("EXTEND", BuiltInFunction.extend)
 global_symbol_table.set("LEN", BuiltInFunction.len)
-global_symbol_table.set("RUN", BuiltInFunction.run)
+global_symbol_table.set("BIM", BuiltInFunction.run)
+    
 
 
+
+
+    
 def run(fn, text):
+
     # Generate tokens
     lexer = Lexer(fn, text)
     tokens, error = lexer.make_tokens()
@@ -2580,5 +2593,5 @@ def run(fn, text):
     context = Context("<program>{b}")
     context.symbol_table = global_symbol_table
     result = interpreter.visit(ast.node, context)
-
     return result.value, result.error
+    
