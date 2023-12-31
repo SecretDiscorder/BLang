@@ -9,9 +9,9 @@ clone this repository
 cd BLang
 
 -> sh blang.sh
--> blang > B("yourfile.blang")
+-> blang > BIM("yourfile.blang")
 
-B("main.blang")
+BIM("main.blang")
 
 
 
