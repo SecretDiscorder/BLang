@@ -1,0 +1,26 @@
+
+    TIPE a = MASUK_ANGKA()
+
+	TIPE b = MASUK_ANGKA()
+
+    TIPE penjumlahan = a + b
+    TIPE pengurangan = a - b
+    TIPE perkalian = a * b
+    TIPE pembagian = a / b
+    TIPE modulo = a % b
+
+    TIPE pangkat = a ^ b
+
+    CETAK("HASIL JUMLAH")
+    CETAK(penjumlahan)
+    CETAK("Hasil Pengurangan:")
+    CETAK(pengurangan)
+    CETAK("Hasil Perkalian:")
+    CETAK(perkalian)
+    CETAK("Hasil Pembagian:")
+    CETAK(pembagian)
+    CETAK("Hasil Modulo:")
+    CETAK(modulo)
+    CETAK("Hasil Pangkat:")
+    CETAK(pangkat)
+	CETAK("return")

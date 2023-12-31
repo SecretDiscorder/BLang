@@ -1,0 +1,8 @@
+TIPE pi = 3.14159
+TIPE radius = 2
+TIPE luas_lingkaran = pi * (radius * radius)
+CETAK("Luas lingkaran dengan radius")
+CETAK(radius)
+CETAK("adalah")
+CETAK(luas_lingkaran)
+CETAK("return")

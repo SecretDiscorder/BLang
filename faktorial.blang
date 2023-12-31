@@ -1,0 +1,19 @@
+ARTI faktorial(n)
+    TIPE hasil = 1
+
+    KEULANG n > 1 LALU
+        TIPE hasil = hasil * n
+        TIPE n = n - 1
+    SELESAI
+
+    KEMBALI hasil
+SELESAI
+
+TIPE angka = 5
+TIPE hasil_faktorial = faktorial(angka)
+
+CETAK("Faktorial dari")
+CETAK(angka)
+CETAK("adalah")
+CETAK(hasil_faktorial)
+CETAK("return")

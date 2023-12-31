@@ -1,0 +1,4 @@
+TERULANG i = 1 KE 5 LALU
+    CETAK(i)
+SELESAI
+CETAK("return")

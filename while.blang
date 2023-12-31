@@ -1,0 +1,7 @@
+
+    TIPE n = 3
+    KEULANG n <= 5 LALU
+        TIPE a = n + 1
+        CETAK(a)
+    SELESAI
+	CETAK("return")

@@ -1,0 +1,39 @@
+ARTI create_array()
+    TIPE array = []
+    KEMBALI array
+SELESAI
+
+
+
+ARTI append_if_list(arr, item)
+    JIKA IS_LIST(item) LALU
+        APPEND(arr, item)
+
+		
+	SELESAI
+
+SELESAI
+
+
+TIPE myArray = create_array()
+
+append_if_list(myArray, ["aku"])
+append_if_list(myArray, ["bima"])
+append_if_list(myArray, ["adi"])
+append_if_list(myArray, ["pratama"])
+append_if_list(myArray, ["kharis"])
+append_if_list(myArray, ["100"])
+
+TIPE myArray1 = myArray
+
+CETAK(myArray)
+
+TIPE findering = LEN(myArray1)
+TIPE i = ["aku"]
+FIND(myArray, [i])
+
+CETAK(i)	
+CETAK(findering)
+
+
+	

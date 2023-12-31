@@ -1,0 +1,9 @@
+TIPE x = 5
+JIKA x == 5 LALU
+    CETAK("Nilai x sama dengan 5")
+LAINJIKA x > 5 LALU
+    CETAK("Nilai x lebih besar dari 5")
+LAIN
+    CETAK("Nilai x kurang dari 5")
+SELESAI
+CETAK("return")

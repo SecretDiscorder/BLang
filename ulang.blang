@@ -3,3 +3,4 @@
 KEULANG 10 > 0 LALU
 	CETAK(10)
 SELESAI
+CETAK("return")
