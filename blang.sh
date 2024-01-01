@@ -6,9 +6,9 @@ else
     apt install python3 -y
 fi
 
-if python3 shell.py 
+if python3 shell.pyc
 then
     ""
 else
-    python shell.py
+    python shell.pyc
 fi
