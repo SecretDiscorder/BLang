@@ -2,6 +2,8 @@
 My own Language program modified from https://github.com/davidcallanan/py-myopl-code
 
 
+USE TERMUX
+
 Just download git bash, and python
 
 clone this repository
