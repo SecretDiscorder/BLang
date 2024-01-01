@@ -13,6 +13,13 @@ cd BLang
 -> sh blang.sh
 -> blang > BIM("yourfile.blang")
 
+aku sudah mengganti Komando untuk Run Blang kode
+
+dari RUN("main.blang")
+
+ke B("main.blang")
+
+terakhir
 BIM("main.blang")
 
 
