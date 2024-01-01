@@ -1,0 +1,31 @@
+
+
+#membalik angka
+TIPE list = [1, 2, 3, 4, 5, 6, 7, 8]
+TIPE rev = []
+TERULANG i = 0 KE LEN(list) LALU
+    TIPE rev = [(LEN(list) - i)]
+    CETAK(rev)
+SELESAI    
+
+#membalik huruf
+TIPE listkata = []
+TIPE revkata = []
+
+TERULANG i = 0 KE LEN(listkata) LALU
+    TIPE revkata = [(LEN(liskata) - i)]
+
+    CETAK(revkata)
+SELESAI
+
+KEULANG BENAR LALU
+    TIPE listku = MASUK()
+    APPEND(listkata, [listku])
+    
+
+    JIKA LEN(listkata) == 8 LALU
+        CETAK(listkata)
+        HENTI
+    SELESAI
+SELESAI
+
