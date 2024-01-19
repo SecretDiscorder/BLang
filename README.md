@@ -53,5 +53,7 @@ TERULANG, KEULANG, DAN, ATAU, CETAK("HALLO DUNIA"), MASUK(), MASUK_ANGKA()
 Execution time for the code `CETAK("HALLO DUNIA")` is stable around 0.001 seconds.
 
 Happy coding with BLang!
+
+
 https://github.com/SecretDiscorder/BLang/assets/139457966/8ac4f91f-480c-4e5b-93d0-7e976347447c
 
